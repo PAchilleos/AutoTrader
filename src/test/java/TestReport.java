@@ -24,8 +24,8 @@ public class TestReport {
     public void setUp(String a){
         report = new ExtentReports();
         ExtentHtmlReporter extentHtmlReporter = new ExtentHtmlReporter(reportFilePath);
-        extentHtmlReporter.config().setReportName("ReportName");
-        extentHtmlReporter.config().setDocumentTitle("DocumentTitle");
+        extentHtmlReporter.config().setReportName(a);
+        extentHtmlReporter.config().setDocumentTitle(a);
         report.attachReporter(extentHtmlReporter);
 
 
